@@ -68,14 +68,13 @@
     color: #000d6b;
 }
 
-.header__location-content h4 {
+.header__location-content {
     font-size: 1.2rem;
     font-weight: 700;
     color: #000d6b;
 }
-.header__location-content h6{
+.header__location-content-txt{
     font-weight: 600;
-
 }
 
 .header__btn{
@@ -85,8 +84,17 @@
     outline: none;
     border-radius: 5px;
 }
+
 .header__btn a{
     display: flex;
     align-items: center;
     column-gap: 0.4rem;
+    text-decoration: none;
+    color: #fff;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+}
+
+.header__btn a:hover{
+    color: #fff;
 }
