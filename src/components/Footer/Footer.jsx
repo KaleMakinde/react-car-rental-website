@@ -7,19 +7,23 @@ import '../../styles/footer.css';
 
 const quickLinks = [
   {
-    path:'/about',
+    path: '/about',
     display: 'About'
   },
   {
-    path:'#',
+    path: '#',
     display: 'Privacy Policy'
   },
   {
-    path:'/cars',
+    path: '/cars',
     display: 'Car Listing'
   },
   {
-    path:'/contact',
+    path: '/blogs',
+    display: 'Blog'
+  },
+  {
+    path: '/contact',
     display: 'Contact'
   },
 ]
@@ -30,16 +34,16 @@ const Footer = () => {
       <Container>
         <Row>
           <Col lg='4' md='4' sm='12'>
-          <div className="logo">
+            <div className="logo footer__logo">
               <h1 ><Link to='/home' className='d-flex align-items-center gap-2'>
                 <i class="ri-car-line"></i>
                 <span>Rent Car <br /> Service</span>
               </Link></h1>
             </div>
             <p className="footer__logo-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Consequatur quaerat possimus inventore illum cupiditate perspiciatis ullam, 
-              impedit facilis reprehenderit odio vel omnis iure incidunt molestiae, 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quaerat possimus inventore illum cupiditate perspiciatis ullam,
+              impedit facilis reprehenderit odio vel omnis iure incidunt molestiae,
               debitis nobis quo commodi aut?
             </p>
           </Col>
@@ -49,13 +53,34 @@ const Footer = () => {
               <h5 className="footer__link-title">Quick Links</h5>
               <ListGroup>
                 {
-                  quickLinks.map((item, index) =>(
-                    <ListGroupItem key={index} className='p-0 mt-3'>
+                  quickLinks.map((item, index) => (
+                    <ListGroupItem key={index} className='p-0 mt-3' id='quick__link'>
                       <Link to={item.path}>{item.display}</Link>
                     </ListGroupItem>
                   ))
                 }
               </ListGroup>
+            </div>
+          </Col>
+
+          <Col lg='3' md='4' sm='6'>
+            <div className="mb-4">
+              <h5 className="footer__link-title"> Head Office </h5>
+              <p className='office__info'>11 Ajogbe Street, Surulere, Lagos</p>
+              <p className='office__info'> +2348034173259</p>
+              <p className='office__info'> Email: makindeadeyemiadekale@gmail.com</p>
+              <p className='office__info'> Office Time: 10am - 7pm</p>
+            </div>
+          </Col>
+
+          <Col lg='3' md='4'>
+            <div className="mb-4">
+            <h5 className="footer__link-title"> Newsletter </h5>
+            <p className="section__description"> Subscribe to our Newsletter</p>
+            <div className="newsletter">
+              <input type="email" placeholder='Email' />
+              <span><i class="ri-send-plane-line"></i></span>
+            </div>
             </div>
           </Col>
         </Row>
