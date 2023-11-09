@@ -24,4 +24,5 @@
 }
 #quick__link a{
     color: rgba(255, 255, 255, 0.715);
+    text-decoration: none;
 }
