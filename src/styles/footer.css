@@ -20,9 +20,15 @@
 }
 #quick__link{
     border: none;
-    background: transparent;
+    background: transparent! important;
 }
 #quick__link a{
     color: rgba(255, 255, 255, 0.715);
     text-decoration: none;
+}
+.footer__link-title{
+    color: #fff;
+}
+.office__info{
+    color: rgba(255, 255, 255, 0.715);
 }
