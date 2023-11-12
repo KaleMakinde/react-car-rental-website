@@ -29,6 +29,9 @@ const quickLinks = [
 ]
 
 const Footer = () => {
+
+  const date = new Date()
+  const year = date.getFullYear()
   return (
     <footer className="footer">
       <Container>
@@ -65,7 +68,7 @@ const Footer = () => {
 
           <Col lg='3' md='4' sm='6'>
             <div className="mb-4">
-              <h5 className="footer__link-title"> Head Office </h5>
+              <h5 className="footer__link-title mb-4"> Head Office </h5>
               <p className='office__info'>11 Ajogbe Street, Surulere, Lagos</p>
               <p className='office__info'> +2348034173259</p>
               <p className='office__info'> Email: makindeadeyemiadekale@gmail.com</p>
@@ -81,6 +84,15 @@ const Footer = () => {
               <input type="email" placeholder='Email' />
               <span><i class="ri-send-plane-line"></i></span>
             </div>
+            </div>
+          </Col>
+
+          <Col lg='12'>
+            <div className="footer__bottom">
+              <p className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
+              <i class="ri-copyright-line"></i> Copyright {year}, 
+              Developed Kale Makinde. All rights reserved.
+              </p>
             </div>
           </Col>
         </Row>
