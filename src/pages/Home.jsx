@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import HeroSlider from '../UI/HeroSlider';
+import Helmet from '../components/Helmet/Helmet'
 
 const Home = () => {
   return (
-    <div>
-      Home
-    </div>
+   <Helmet title='Home'>
+
+   </Helmet>
   )
 }
 
